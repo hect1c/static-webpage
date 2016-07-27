@@ -1,0 +1,22 @@
+{
+  "name": "static-webpage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hect1c/static-webpage.git"
+  },
+  "author": "",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/hect1c/static-webpage/issues"
+  },
+  "homepage": "https://github.com/hect1c/static-webpage#readme",
+  "dependencies": {
+    "angular": "^1.5.8"
+  }
+}

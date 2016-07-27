@@ -9,23 +9,149 @@
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
+        <!-- Material Design fonts -->
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-        <link rel="stylesheet" href="css/normalize.css">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Bootstrap Material Design -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/bootstrap.material-design/0.5.10/css/bootstrap-material-design.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/bootstrap.material-design/0.5.10/css/ripples.min.css">
+
+        <!-- <link rel="stylesheet" href="css/normalize.css"> -->
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
+
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <!-- HEADER -->
+        <div class="container">
+          <div class="header row">
+            <div role="navigation" class="navbar navbar-inverse">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <img src="img/logo.jpg" height="60px" width="60px" />
+                </div>
+                <div class="navbar-collapse collapse navbar-responsive-collapse">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                      <a href="#" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Home<b class="caret"></b>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a href="javascript:void(0)">Link 1</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" data-target="#" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a href="javascript:void(0)">Link 2</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Events<b class="caret"></b>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a href="javascript:void(0)">Link 3</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Contact<b class="caret"></b>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a href="javascript:void(0)">Link 4</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Help<b class="caret"></b>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a href="javascript:void(0)">Link 5</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="content">
+            <h2>Article Heading 1</h2>
+            <p>Etiam quis elit malesuada, imperdiet dolor vitae, pellentesque sem. Quisque rhoncus, metus eget hendrerit malesuada, sem mi pulvinar enim, sed ullamcorper eros tortor et diam.</p>
+            <p>Phasellus euismod, erat nec laoreet condimentum, nisi tellus commodo sem, eget convallis magna massa eu magna. Sed malesuada odio risus, ac hendrerit dui fringilla quis.</p>
+
+            <h2>Article Heading 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis rutrum orci at pellentesque. Etiam porta nisl et mauris vestibulum, id sodales libero luctus.</p>
+
+            <h2>Article Heading 3</h2>
+            <p>Sed felis arcu, vestibulum vitae sollicitudin sed, euismod eget ipsum. Nulla ipsum purus, egestas sit amet mauris sed, molestie ultricies est. Fusce viverra viverra nisl sed cursus. Praesent sit amet feugiat quam. Donec at varius quam.</p>
+
+
+            <div class="panel panel-warning">
+              <div class="panel-heading">
+                <a class="section" href="#"><h3 class="panel-title">Section 1 <b class="caret"></b></h3></a>
+              </div>
+              <div data-id="section1" class="panel-body active">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis rutrum orci at pellentesque. Etiam porta nisl et mauris vestibulum, id sodales libero luctus.</p>
+              </div>
+            </div>
+
+            <div class="panel panel-warning">
+              <div class="panel-heading">
+                <a class="section" href="#">
+                  <h3 class="panel-title">Section 2<b class="caret"></b>
+                  </h3>
+                </a>
+              </div>
+              <div data-id="section2" class="panel-body">
+                <p>Sed felis arcu, vestibulum vitae sollicitudin sed, euismod eget ipsum.</p>
+                <p>Nulla ipsum purus, egestas sit amet mauris sed, molestie ultricies est. Fusce viverra viverra nisl sed cursus. Praesent sit amet feugiat quam. Donec at varius quam.</p>
+              </div>
+            </div>
+
+            <div class="panel panel-warning">
+              <div class="panel-heading">
+                <a data-id="section3" class="section" href="#"><h3 class="panel-title">Section 3<b class="caret"></b></h3></a>
+              </div>
+              <div class="panel-body">
+                <p>Etiam quis elit malesuada, imperdiet dolor vitae, pellentesque sem. Quisque rhoncus, metus eget hendrerit malesuada, sem mi pulvinar enim, sed ullamcorper eros tortor et diam.</p>
+              </div>
+            </div>
+
+            <div class="panel panel-warning">
+              <div class="panel-heading">
+                <a data-id="section4" class="section" href="#">
+                  <h3 class="panel-title">Section 4<b class="caret"></b>
+                  </h3>
+                </a>
+              </div>
+              <div class="panel-body">
+                <p>Nulla a ultricies orci. Suspendisse efficitur lectus nec ex bibendum feugiat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam tempus sem et augue gravida placerat.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="navbar navbar-inverse">
+              <span class="copyright pull-right"> © 2016 Hect1c. All rights reserved.</span>
+            </div>
+          </div>
+        </div>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/bootstrap.material-design/0.5.10/js/ripples.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/bootstrap.material-design/0.5.10/js/material.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
